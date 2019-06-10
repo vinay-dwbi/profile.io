@@ -1,2 +1,3 @@
-# My GitHub Profile
-This is a test edit from VS Code and online commit.
+# My Profile
+
+My name is Vinay. I am currently working as BI-DW Architect for Pharmacy
