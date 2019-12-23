@@ -190,25 +190,29 @@ figure {
     font-size: 15px;
     text-align: center;
     font-weight: 400;
-    color: rgba(0, 0, 0, 0.5);
+    color: #555;
     padding: 0 20px;
     width: 100%; }
     @media screen and (max-width: 768px) {
       #colorlib-aside .colorlib-footer {
         position: relative;
+        color: #555;
         bottom: 0; } }
     #colorlib-aside .colorlib-footer span {
+      color: #555;
       display: block; }
     #colorlib-aside .colorlib-footer ul {
+      color: #555;
       padding: 0;
       margin: 0; }
       #colorlib-aside .colorlib-footer ul li {
         padding: 0;
         margin: 0;
+        color: #555;
         display: inline;
         list-style: none; }
         #colorlib-aside .colorlib-footer ul li a {
-          color: rgba(255, 255, 255, 0.3);
+          color: #555;
           padding: 4px; }
           #colorlib-aside .colorlib-footer ul li a:hover, #colorlib-aside .colorlib-footer ul li a:active, #colorlib-aside .colorlib-footer ul li a:focus {
             text-decoration: none;
