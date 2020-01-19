@@ -46,6 +46,52 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+
+	<style>
+		.collapsible {
+			background-color: #777;
+			color: white;
+			cursor: pointer;
+			padding: 10px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+		}
+
+		.active,
+		.collapsible:hover {
+			background-color: #555;
+		}
+
+		.content {
+			padding: 0 10px;
+			display: none;
+			overflow: hidden;
+			margin-left: 40px;
+			background-color: #f1f1f1;
+		}
+
+		.tab {
+			margin-left: 40px;
+			background-color: #111;
+			color: #fff;
+			padding: 2px;
+		}
+
+		.tabw {
+			margin-left: 40px;
+			background-color: #fff;
+			color: blue;
+			padding: 2px;
+		}
+	</style>
 
 </head>
 
@@ -95,6 +141,55 @@
 
 
 			<div id="colorlib-main">
+				<!--section-- id="colorlib-hero" class="js-fullheight" data-section="home">
+					<div class="flexslider js-fullheight">
+						<ul class="slides">
+							<li style="background-image: url(images/img_bg_1.jpg);">
+								<div class="overlay"></div>
+								<div class="container-fluid">
+									<div class="row">
+										<div
+											class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+											<div class="slider-text-inner js-fullheight">
+												<div class="desc">
+													<h1>Hi! <br>I'm Vinay</h1>
+													<h2>I am an IT Architect, working on Business Intelligence, Data
+														Warehousing and CRM Apps<a href="#" target="_blank"></a>
+													</h2>
+													<p><a href="profile.pdf" class="btn btn-primary btn-learn">Download
+															CV <i class="icon-download4"></i></a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li style="background-image: url(images/img_bg_2.jpg);">
+								<div class="overlay"></div>
+								<div class="container-fluid">
+									<div class="row">
+										<div
+											class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+											<div class="slider-text-inner">
+												<div class="desc">
+													<h1>Hi! <br>I'm Vinay</h1>
+													<h2>I am a IT Architect, I work on Business Intelligence, Data
+														Warehousing and CRM Applications<a href="#" target="_blank"></a>
+													</h2>
+													<p><a href="profile.pdf" class="btn btn-primary btn-learn">View
+															Portfolio <i class="icon-briefcase3"></i></a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</!--section-->
+
+
 				<section class="colorlib-about" data-section="home">
 					<div class="colorlib-narrow-content">
 						<div class="row">
@@ -186,348 +281,51 @@
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
+								<!--span class="heading-meta">Experience</!--span-->
 								<h2 class="colorlib-heading animate-box">Work Experience</h2>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
 								<div class="timeline-centered">
-
-
-
 									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 										<div class="timeline-entry-inner">
+
 											<div class="timeline-icon color-1">
 												<i class="icon-pen2"></i>
 											</div>
+
 											<div class="timeline-label">
-												<h2><a href="#">Kaiser Permanente</a> <span>&nbsp;&nbsp;(Apr 2017 -
-														Present)</span>
+												<h2><a href="#">Kaiser Permanente</a> <span>APR 2017 - PRESENT</span>
 												</h2>
-												<div class="panel panel-default">
-													<div class="panel-heading" role="tab" id="headingTwo1">
-														<h4 class="panel-title">
-															<a class="collapsed" data-toggle="collapse"
-																data-parent="#accordion" href="#collapseTwo1"
-																aria-expanded="false" aria-controls="collapseTwo1">
-																&nbsp;&nbsp;&nbsp;&nbsp;Identifying opportunities in
-																Care Delivery BIO. Design,
-																develop and implement business
-																intelligence, data integration and CRM solutions to
-																improve and reduce the cost of operations. Collaborate
-																with business stake holders in pharmacy and IT
-																operational team for project
-																delivery
-															</a>
-														</h4>
-													</div>
-													<div id="collapseTwo1" class="panel-collapse collapse"
-														role="tabpanel" aria-labelledby="headingTwo1">
-														<div class="panel-body">
-															<strong>Role:</strong>
-															<ul>
-																<li>
-																	Data integration solution using Enterprise ETL Tools
-																	- Informatica and Oracle PL/SQL for
-																	pharmacy GL. DevOps solutions using Python for
-																	Business Teams.</li>
-																<li>Building operational and interactive reports for
-																	pharmacy, care delivery business and KP
-																	International. </li>
-																<li>Automation of dynamic report generation using
-																	PL/SQL, shell scripts and custom report
-																	delivery using Tableau rest API</li>
-																<li>Designed and built CRM forms on oracle apex for
-																	program management to the new
-																	engagement. Understand, designed back-end
-																	transaction data model and reporting
-																	solution.
-																</li>
-																<li>Implemented python airflow and migrated cron jobs to
-																	airflow for ease of maintenance. </li>
-																<li>Setup intranet portal on Apache server, integrated
-																	Tableau report for real time data refresh.</li>
-																<li>Build SharePoint cloud site and KP Wiki page for
-																	data warehouse team to manage work
-																	intake and share/integrated reports. Project
-																	tracking, code management and SOX
-																	compliance reporting using DevOps Tools.
-																</li>
-															</ul>
-															<p><strong>Skill Stack:</strong></br>
-																Informatica, Tableau, OBIEE, Oracle Apex, Oracle, MySQL,
-																SAP BO, Linux, Cloud
-																Services, JIRA, Git SCM, PLSQL, Shell, SoapUI, Apache
-																Webserver and Python Airflow</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</article>
-
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-2">
-												<i class="icon-pen2"></i>
-											</div>
-											<div class="timeline-label">
-												<h2><a href="#">Trane</a><span>&nbsp;&nbsp;(Nov 2016 -
-														Jan 2017)</span>
-												</h2>
-												<div class="panel panel-default">
-													<div class="panel-heading" role="tab" id="headingTwo2">
-														<h4 class="panel-title">
-															<a class="collapsed" data-toggle="collapse"
-																data-parent="#accordion" href="#collapseTwo2"
-																aria-expanded="false" aria-controls="collapseTwo1">
-																&nbsp;&nbsp;&nbsp;&nbsp;Developed project implementation
-																road map with proven solution to migrate legacy reports
-																and database to standard Enterprise BI and data
-																warehouse.
-															</a>
-														</h4>
-													</div>
-													<div id="collapseTwo2" class="panel-collapse collapse"
-														role="tabpanel" aria-labelledby="headingTwo2">
-														<div class="panel-body">
-															<strong>Role:</strong>
-															<ul>
-																<li>
-																	Evaluated and documented the legacy report design,
-																	i.e., the object and data level security
-																	and the report integration with internal
-																	applications.</li>
-																<li>Identified critical and unique report with respect
-																	to functionality and technical complexity
-																	for prototyping to new BI Platform.</li>
-																<li>Built a sandbox server to host OBIEE and Tableau
-																	servers on RHEL / Azure platform.</li>
-																<li>Designed similar interface as legacy application,
-																	with added functionality on new BI
-																	platform. by creating a new interactive Home page.
-																	Demonstrate report drill-down, guided
-																	navigation, selection steps, agents, security and
-																	burst reports.
-																</li>
-																<li>Collaborate with System admin/ IT Team and created
-																	project sprint plans for migrating to
-																	the new Data Lake, EDW solution and BI platforms.
-																</li>
-															</ul>
-															<p><strong>Skill Stack:</strong></br>
-																Tableau, OBIEE, BI Publisher, BIRT Actuate, PL/SQL,
-																Cloudera, Oracle, AWS and
-																SoapUI.</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</article>
-
-
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-3">
-												<i class="icon-pen2"></i>
-											</div>
-											<div class="timeline-label">
-												<h2><a href="#">BELK </a><span>&nbsp;&nbsp;(Feb 2013 -
-														Nov 2016)</span>
-												</h2>
-												<div class="panel panel-default">
-													<div class="panel-heading" role="tab" id="headingTwo3">
-														<h4 class="panel-title">
-															<a class="collapsed" data-toggle="collapse"
-																data-parent="#accordion" href="#collapseTwo3"
-																aria-expanded="false" aria-controls="collapseTwo1">
-																&nbsp;&nbsp;&nbsp;&nbsp;Built executive sales and store
-																operational reports, integrated BI reports to
-																SharePoint, created data pipelines to bring data from
-																Oracle RMS, automated store report bursting and delivery
-																to store sites on Intranet.
-															</a>
-														</h4>
-													</div>
-													<div id="collapseTwo3" class="panel-collapse collapse"
-														role="tabpanel" aria-labelledby="headingTwo3">
-														<div class="panel-body">
-															<strong>Role:</strong>
-															<ul>
-																<li>Worked as BI Architect in Info Delivery Team in
-																	leading BI development and upgrade projects in
-																	OBIEE, and Tableau .</li>
-																<li>Involved in project life cycle planning, gap
-																	analysis, resource mapping and implementation plan.
-																</li>
-																<li>Worked on requirement gathering with Retail
-																	Merchandising DMM and GMM. Analyze user stories and
-																	build custom data models on Oracle RMS, ReIM and
-																	Allocation.</li>
-																<li>Analyze BI Server performance, diagnostics log files
-																	and collaborate with Oracle Support and Tableau
-																	vendor support in analysis. Patching and validating
-																	fixes.
-																</li>
-																<li>Used Python for cleansing user feedback data file
-																	and loading data for reporting and analysis.
-																</li>
-																<li>Profiling of data pertinent to various LOBs (Line of
-																	Business).
-																</li>
-																<li>Install, configure and upgrade OBIEE / BI Publisher
-																	and Tableau servers. scale out BI Servers:
-																	Horizontal scaling and vertical scaling.
-																</li>
-																<li>Worked on site root certificate and SSO
-																	configuration using Kerberos based Windows
-																	Authentication. 
-																</li>
-																<li>Worked on PL/SQL package and shell scripts for data
-																	jobs on Autosys.
-																</li>
-																<li>Automated email delivery and bi data refresh jobs on
-																	Tableau. CA SCM integration with Tableau application
-																	server for the migration.
-																</li>
-															</ul>
-															<p><strong>Skill Stack:</strong></br>
-																Tableau, OBIEE, BI Publisher, PL/SQL, Oracle, Autosys,
-																Unix, WSDL Services and SoapUI.</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</article>
-
-
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-4">
-												<i class="icon-pen2"></i>
-											</div>
-											<div class="timeline-label">
-												<h2><a href="#"> TIAA </a><span>&nbsp;&nbsp;(Feb 2008 -
-														Nov 2012)</span>
-												</h2>
-												<div class="panel panel-default">
-													<div class="panel-heading" role="tab" id="headingTwo4">
-														<h4 class="panel-title">
-															<a class="collapsed" data-toggle="collapse"
-																data-parent="#accordion" href="#collapseTwo4"
-																aria-expanded="false" aria-controls="collapseTwo1">
-																&nbsp;&nbsp;&nbsp;&nbsp;Delivered multiple business
-																intelligence and data warehouse development, enhancement
-																and upgrade projects. Worked on institutional reporting
-																on web and reporting solution for ERISA. </a>
-														</h4>
-													</div>
-													<div id="collapseTwo4" class="panel-collapse collapse"
-														role="tabpanel" aria-labelledby="headingTwo4">
-														<div class="panel-body">
-															<strong>Role:</strong>
-															<ul>
-																<li>Working on Business Requirement gathering and
-																	Analysis. Coordinated with various LOBs and involved
-																	in JAD sessions with information stewards</li>
-																<li>Designed and developed BI Solution in OBIEE. Worked
-																	on repository modeling, creating schema in physical
-																	layer and configured logical layer, defining logical
-																	joins/keys to fulfill complex BI requirement.
-																</li>
-																<li>Worked on OBIEE Application upgrade and worked with
-																	Oracle Support services.</li>
-																<li>Worked on data modeling, defining facts and
-																	dimensions, design dimensional hierarchy, level
-																	based measures and aggregate views.
-																</li>
-																<li>Built solution on Oracle BI Publisher and OBIEE
-																	Integrated platform for ERISA, by leveraging
-																	write-back, PL/SQL trigger and report burst
-																	function.
-																</li>
-																<li>Worked on OC4J and Weblogic servers to scaling bi
-																	server components.
-																</li>
-																<li>OBIA Type 1, Type 2 and Type 3 customization in
-																	Informatica and OBIEE out of the box solution for HR
-																	Application
-																</li>
-																<li>Developed Informatica mapping using various
-																	transformations, Aggregate, Router, Filter, Join,
-																	Expression, Lookup and Update strategy.
-																</li>
-																<li>BI Application security implementation.
-																	Authentication using LDAP and SAML 2.0 for sso.
-																</li>
-
-															</ul>
-															<p><strong>Skill Stack:</strong></br>
-																Siebel CRM, Siebel Analtics, OBIEE, BI Publisher,
-																Oracle, Teradata, Informatica, PL/SQL, Shell Scripting
-																and
-																SoapUI.</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</article>
-
-
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-1">
-												<i class="icon-pen2"></i>
-											</div>
-											<div class="timeline-label">
-												<h2><a href="#">Franklin Templeton </a> <span>&nbsp;&nbsp;(May 2008 -
-														Oct 2008)</span>
-												</h2>
-												<div class="panel panel-default">
-													<div class="panel-heading" role="tab" id="headingTwo5">
-														<h4 class="panel-title">
-															<a class="collapsed" data-toggle="collapse"
-																data-parent="#accordion" href="#collapseTwo5"
-																aria-expanded="false" aria-controls="collapseTwo1">
-																&nbsp;&nbsp;&nbsp;&nbsp;Develop business data models and
-																subject areas on Oracle Siebel Analytics. Create
-																mappings and workflows on Informatica. Integrate
-																Financial Reports on Siebel CRM Finance.
-															</a>
-														</h4>
-													</div>
-													<div id="collapseTwo5" class="panel-collapse collapse"
-														role="tabpanel" aria-labelledby="headingTwo5">
-														<div class="panel-body">
-															<strong>Role:</strong>
-															<ul>
-																<li>
-																	Extensively worked on design and developing
-																	OBIEE Repository.
-																</li>
-																<li>
-																	Implement Row level security and setup permissions
-																	for users based on Siebel Roles / DB Authentication.
-																</li>
-																<li>Configuring scheduler, building Narrowcast reports
-																	and creating delivery profiles for the list of
-																	user’s handheld devices (Blackberry) with PIN.</li>
-																<li>Worked with Model Manager and multiple data marts,
-																	involving multiple Subject Areas simultaneously,
-																	domains and Naming Standards, building ETL Source to
-																	Target Mapping.</li>
-															</ul>
-															<p><strong>Skill Stack:</strong></br>
-																Informatica, Tableau, OBIEE, Oracle Apex, Oracle, MySQL,
-																SAP BO, Linux, Cloud
-																Services, JIRA, Git SCM, PLSQL, Shell, SoapUI, Apache
-																Webserver and Python Airflow</p>
-														</div>
-													</div>
-												</div>
+												<p>Identify potential leads across Pharmacy Care Delivery and provide BI
+													/ DW / CRM automation solutions to reduce the cost of business
+													operations. Collaborate
+													with various stake holders in Pharmacy IT Operations, lead BI & DW
+													projects and mentor Onshore and
+													Offshore teams.</p>
+												<!--ul>
+													<li>
+														Designed and developed operational and interactive reports for
+														Pharmacy Care Delivery,
+														care delivery business executives and KP International.</li>
+													<li>Automated custom report delivery using shell scripts, PL/SQL and
+														rest API.</li>
+													<li>Developed data pipelines using Enterprise ETL Tools, PLSQL and
+														Python.</li>
+													<li>Built CRM form based application and Email delivery services.
+													</li>
+													<li>Hosted intranet portal (Apache server/ jQuery and Python Django
+														libraries) and SharePoint
+														Cloud site for Data Warehouse team to manage new work intake and
+														collaborate
+														information across IT/ Business teams.</li>
+													<li>Managed content for Care Delivery artifacts and project content
+														management.</li>
+													<li>Project tracking, code management and SOX compliance reporting
+														using DevOps Tools.
+													</li>
+												</!--ul-->
 											</div>
 										</div>
 									</article>
@@ -539,51 +337,16 @@
 												<i class="icon-pen2"></i>
 											</div>
 											<div class="timeline-label">
-												<h2><a href="#">DHL</a><span>&nbsp;&nbsp;(Feb 2008 -
-														Apr 2008)</span>
-												</h2>
-												<div class="panel panel-default">
-													<div class="panel-heading" role="tab" id="headingTwo6">
-														<h4 class="panel-title">
-															<a class="collapsed" data-toggle="collapse"
-																data-parent="#accordion" href="#collapseTwo6"
-																aria-expanded="false" aria-controls="collapseTwo1">
-																&nbsp;&nbsp;&nbsp;&nbsp;Lead the engagement for
-																assessing business requirement for Reporting and DW
-																solution on Siebel Analytics, customizing CRM and
-																Enterprise OLAP Data warehouse.
-															</a>
-														</h4>
-													</div>
-													<div id="collapseTwo6" class="panel-collapse collapse"
-														role="tabpanel" aria-labelledby="headingTwo6">
-														<div class="panel-body">
-															<strong>Role:</strong>
-															<ul>
-																<li>
-																	Worked with business leaders on requirement
-																	gathering, creating functional design document, and
-																	understanding source system data.</li>
-																<li>Develop custom OLAP Data Model and preparation of
-																	test data.</li>
-																<li>Design and development of Siebel Analytics
-																	Repository.</li>
-																<li>Developed interactive reports and dashboards,
-																	Analytics repository and the WebCatalog . </li>
-																<li>Optimize performance of ETL Jobs. </li>
-
-															</ul>
-															<p><strong>Skill Stack:</strong></br>
-																Tableau, OBIEE, BI Publisher, BIRT Actuate, PL/SQL,
-																Cloudera, Oracle, AWS and
-																SoapUI.</p>
-														</div>
-													</div>
-												</div>
+												<h2><a href="#">Trane</a>
+													<span>NOV 2016- JAN 2017</span></h2>
+												<p>Worked on project implementation road map with proven solution to
+													migrate legacy reports and database to standard Enterprise BI and
+													Data Warehouse. Identified key critical and unique report with
+													respect to functional and technical complexity and designed
+													prototype solution on new Enterprise BI Platform.</p>
 											</div>
 										</div>
 									</article>
-
 
 									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 										<div class="timeline-entry-inner">
@@ -591,49 +354,38 @@
 												<i class="icon-pen2"></i>
 											</div>
 											<div class="timeline-label">
-												<h2><a href="#">Cbeyond</a><span>&nbsp;&nbsp;(Nov 2007 -
-														Jan 2008)</span>
-												</h2>
-												<div class="panel panel-default">
-													<div class="panel-heading" role="tab" id="headingTwo7">
-														<h4 class="panel-title">
-															<a class="collapsed" data-toggle="collapse"
-																data-parent="#accordion" href="#collapseTwo7"
-																aria-expanded="false" aria-controls="collapseTwo1">
-																&nbsp;&nbsp;&nbsp;&nbsp;Business Intelligence and DW
-																Development project. Worked with business users on
-																requirement documentation, design proof of concept
-																models and project delivery.
-															</a>
-														</h4>
-													</div>
-													<div id="collapseTwo7" class="panel-collapse collapse"
-														role="tabpanel" aria-labelledby="headingTwo7">
-														<div class="panel-body">
-															<strong>Role:</strong>
-															<ul>
-																<li>Worked as onshore lead. Involved in OBI Application
-																	Enhancement, worked on requirement gathering.</li>
-																<li>Enhancement from custom build CRM solution to Oracle
-																	Business Analytics Warehouse (OBAW).
-																</li>
-																<li>Configuring LDAP Authentication and BI security.
-																</li>
-																<li>Integrated BI Reports on Siebel CRM Application.
-																</li>
-																<li>Report performance Tuning at Oracle database level.
-																</li>
-
-															</ul>
-															<p><strong>Skill Stack:</strong></br>
-																Siebel CRM, OBIEE, Informatica, Oracle, </p>
-														</div>
-													</div>
-												</div>
+												<h2><a href="#">Belk</a> <span> FEB 2013- OCT 2016</span></h2>
+												<ul>
+													<li>Partnered with business owners to understand requirements and
+														develop supporting analysis to solve business problems.</li>
+													<li>Designed and developed store operational reports, BI application
+														integration with organizational sites, built data pipelines, and
+														implemented automation to burst store operational reports </li>
+												</ul>
 											</div>
 										</div>
 									</article>
 
+									<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+										<div class="timeline-entry-inner">
+											<div class="timeline-icon color-3">
+												<i class="icon-pen2"></i>
+											</div>
+											<div class="timeline-label">
+												<h2><a href="#">TIAA</a> <span> NOV 2008- DEC 2012</span></h2>
+												<ul>
+													<li>Designed, developed and delivered multiple Business Intelligence
+														and DW Solutions. Worked on designing Institutional Reporting on
+														Web.
+													</li>
+													<li>Worked on creating new data pipelines to bring data from various
+														sources and enhance OBI Finance Application for new business
+														needs.
+													</li>
+												</ul>
+											</div>
+										</div>
+									</article>
 
 									<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
 										<div class="timeline-entry-inner">
@@ -641,50 +393,17 @@
 												<i class="icon-pen2"></i>
 											</div>
 											<div class="timeline-label">
-												<h2><a href="#"> Cognizant Technology Solutions
-													</a><span>&nbsp;&nbsp;(Sep 2005 -
-														Oct 2007)</span>
-												</h2>
-												<div class="panel panel-default">
-													<div class="panel-heading" role="tab" id="headingTwo8">
-														<h4 class="panel-title">
-															<a class="collapsed" data-toggle="collapse"
-																data-parent="#accordion" href="#collapseTwo8"
-																aria-expanded="false" aria-controls="collapseTwo1">
-																&nbsp;&nbsp;&nbsp;&nbsp;Worked on multiple projects,
-																lead offshore teams in delivering solutions to various
-																customers around the globe as part of Center of
-																Excellence in BI. </a>
-														</h4>
-													</div>
-													<div id="collapseTwo8" class="panel-collapse collapse"
-														role="tabpanel" aria-labelledby="headingTwo8">
-														<div class="panel-body">
-															<strong>Role:</strong>
-															<ul>
-																<li>Siebel Analytics Financial Application development
-																	and Customize Siebel Call Center ENU, Worked on out
-																	of the box Siebel Analytics and Informatica
-																	Enterprise solution.</li>
-																<li>Involved in development of embedded contextual CRM
-																	data into Siebel applications
-																</li>
-																<li>Customize Data Warehouse, develop ETL Mappings and
-																	configure DAC
-																</li>
-																<li>Implement security in BI Application
-																</li>
-															</ul>
-															<p><strong>Skill Stack:</strong></br>
-																Siebel CRM, Siebel Analtics, Informatica, Oracle.</p>
-														</div>
-													</div>
-												</div>
+												<h2><a href="#">Cognizant Technology Solutions</a> <span>SEP 2005 -
+														PRESENT</span></h2>
+												<p>Delivered Multiple Business Intelligence and Data Warehouse
+													development, Enhancement and Upgrade Projects for various clients
+													accross North America and Asia Pacific</p>
 											</div>
 										</div>
 									</article>
 
 
+									</article>
 
 									<article class="timeline-entry begin animate-box"
 										data-animate-effect="fadeInBottom">
@@ -891,7 +610,7 @@
 													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
 														href="#collapseTwo" aria-expanded="false"
 														aria-controls="collapseTwo">Visvesvaraya Technological
-														University, Bachelor of Engineering | 2001 - 2005
+														University, Bachelor of Engineering
 													</a>
 												</h4>
 											</div>
@@ -921,7 +640,7 @@
 													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
 														href="#collapseThree" aria-expanded="false"
 														aria-controls="collapseThree">PC Jabins Science College,
-														Pre-University Karnataka | 1999 - 2001
+														Pre-University Karnataka
 													</a>
 												</h4>
 											</div>
@@ -962,6 +681,14 @@
 										</a></span>
 								</div>
 							</div>
+							<!--div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+								<div class="services color-4">
+									<span class="icon2"><a href="https://dynamicindex.blogspot.com/?view=sidebar"><i
+												class="fab fa-blogger" style="font-size:60px;"></i>
+											<font color="#a84cb8"></br>Useful Index</font>
+										</a></span>
+								</div>
+							</div-->
 						</div>
 					</div>
 				</section>
